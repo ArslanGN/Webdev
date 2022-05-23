@@ -7,6 +7,54 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+  <!-- any site starts with the header tag - under it we mean the logo and menu -->
+  <!-- we don't care about the width because it's +-infinite
+    because everyone has different monitors and we don't pay attention to it -->
+  <!-- If we look at the figma and click on the first picture with a bicycle
+    then we will see that our layout does not climb anywhere beyond 1200, only the footer crawls out below  -->
+  <!-- То есть контент находится в некий зоне 1200пх соответственно мне чтобы мой 
+    контент не разбежался  делаю какой-то контейнер(он опр. только ширину) 
+    это считается удобно для глаз человека он может нормально воспринимать эту информацию -->      
+ <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <!--inner это внутренная обёртка и 
+                2 нижних подчёркивания это метод BEM названивания классов т.е Блочный метод https://css-tricks.com/bem-101/ -->
+            <a class="logo" href="#" >
+                <!--логотип это всегда ссылка в подавляющем большинстве случаев до 99 и 9 процента 
+                    поэтому мы создали тег "a" с классом лого -->
+                <img class="logo__img" src="images/logo.jpg" alt="Logo">    
+
+            </a>
+            <nav class="menu">
+                <!-- nav называется  типа навигация ну это навигация по сайту
+                    как бы просто скажем так если у вас есть какая-то навигация по сайту используйте "nav"-->
+                <!--меню принято делать "списком - ul" потому что это удобно-->
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Описание</a>
+
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Характеристики</a>
+
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">стоимость</a>
+
+                    </li>
+                </ul>
+                <!-- просто делаем маркированный список это "ul", внутри она состоит из трех "li" 
+                    внутри каждой фишки есть у нас ссылочка то есть вот такая самая простая схема 
+                    которая только может существовать в этом мире-->
+
+
+            </nav>
+
+        </div>
+
+
+    </div>
+ </header>   
 </body>
 </html>
