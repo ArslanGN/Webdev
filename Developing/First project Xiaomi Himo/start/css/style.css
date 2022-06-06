@@ -1,9 +1,43 @@
+/*  * selects every element, 
+::before and 
+::after are CSS pseudo elements, 
+comma is how you seperate elements you’re applying rules to in CSS. 
+“apply this rule to all elements, 
+all ::before pseudo-elements and 
+all ::after pseudo-elements”.*/
 *,
 *::after,
 *::before{
 box-sizing: border-box;    
 }
-/*31:49 minutda galdym */
+/*esasy ulanylen zatlaryn nastroykasy etmeli basda dizayna garap name bar name yoguna gora*/
+/*basga ul listlerem bolsa saytda olarada nastroykasyny edes*/
+/*unordered lists (<ul>) - the list items are marked with bullets
+ordered lists (<ol>) - the list items are marked with numbers or letters*/
+.ul{
+    margin: 0;
+    list-style-type: none;
+    /*gyradaky togalaklary ayyre*/
+    }
+.li{
+    padding-left: 0;
+}
+.a{
+    text-decoration: none;/*sylkanyn asagyndaky cyzygy ayyre*/
+    color: inherit;/*oz enen bn atandan renki al diymek*/
+}
+.body{
+/*munda shriftler nahili bolmaly razmeri renki yazes */
+/*maketden alyne ol zatlaram */
+/*maketde textde shrift inter bold regular diye */
+/*fonts google alen shriftleri*/
+font-family: 'Inter', sans-serif;
+font-weight: 400;/*ginisligi*/
+font-size: 14px;/*ululugy*/
+line-height: 17px;/*beyikligi*/
+color: #131313;
+}
+/*1:30:50 minutda galdym */
 /*окей хорошо но есть тут некая проблем к нельзя писать здесь статическую ширину
 вообще статическая ширина верстки это такое прикольное но опасное явление 
 не такое опасное как статическая высота но все
@@ -18,12 +52,106 @@ box-sizing: border-box;
     yagny cepden 10 sagdan 10 jemi 20px padding:0 10px diyip, 
     onson eger bizde max-width:1200px bolon bolsady onda 1200-20=1800 bole 
     bize dizayner 1200 bolsun diydi son ucinem max-width:1220px diyip yazes */
-max-width:1220px;
-padding: 0 10px;/*telefonlar ucun edile*/
+    max-width:1220px;
+    padding: 0 10px;/*telefonlar ucun edile*/
 /*margin авто то есть это означает что тут сверху и снизу у него будет 0 а
 слева и справа будет автоматически отступ он будет автоматически отталкиваться (<-- content-->) */
-margin:0 auto;
+    margin:0 auto;
 }
 
 /*всегда если возникают какие-то непонятки неразберихи всегда значит всегда применяйте такую историю как
 просмотреть код то есть вы должны открывать инспектор элементов и сразу лицезреть что идет не так*/
+.header__inner{
+    display:flex;
+    justify-content: space-between;
+    align-items: center; /*logo bn ortasy den durar yaly*/
+}
+/*logotipa soz yok ol oz yerinde indi 3 nokatly menyudan menyu etmeli*/
+/*menu <- menulist<-menuitem<-menulink*/
+.menu{
+    margin-right: 70px;/*figmada 70px diyip gorkeze ispect etsen стоимост sag tarapy surat bn alsan*/
+}
+/*menu listde elementler bar menyu ucun spisok bar */
+.menu__list{
+    list-style-type:none;/*gyradaky togalaklary ayyre*/
+    display: flex;
+}
+/*menu itemlerde spisogyn elementleri  Описание Характеристики стоимость*/
+.menu__item + .menu__item{
+/*menu item ondan son gonsyna bere */
+padding-left: 10px;
+/* opisaniyada padding left yok bole */
+}
+.menu__link{
+text-transform: uppercase;/*hemme harplary bas harp bn yazmak ucn*/
+padding: 43px 20px; /*up down 43px right left 20px*/
+text-decoration: none;
+color: inherit;
+transition: all .3s; /*asassa yuwas eder yaly animasiyany myskany ustune edenimizde*/
+}
+.menu__link:hover{
+    background-color: #131313;
+    color:#fff;
+}
+
+.bike{
+    padding:100px 0 150px;
+
+}
+.bike__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bike__column-slider{
+    flex-basis: 630px;
+    margin-left: 30px;
+    max-width: 630px;
+}
+.bike__title{/*bike name*/
+    /* asakdakylar figmadan alyndy*/
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    margin: 60px 0 5px;
+}
+.bike__subtitle{/*doesnt work man */
+    margin: 0 0 60px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    columns: #6f6f6f;
+}
+.bike__text{
+    max-width: 420px;
+    margin-bottom: 20px;
+}
+.bike__link{/*zakazat knopka*/
+    margin-top: 80px;
+    display:inline-block ;
+    background-color: #131313;
+    color: #fff;
+    /*up down 28, right left 81px*/
+    padding: 28px 81px;
+    text-transform:uppercase ;
+    text-decoration: none; /*!ozum etdim cunku yokarsyndaky yazylany kabul edenok linkler ucun edileni*/
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.1em;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
