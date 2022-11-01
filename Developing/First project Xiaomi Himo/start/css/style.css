@@ -1,4 +1,4 @@
-/*  * selects every element, 
+/* selects every element, 
 ::before and 
 ::after are CSS pseudo elements, 
 comma is how you seperate elements you’re applying rules to in CSS. 
@@ -37,7 +37,7 @@ font-size: 14px;/*ululugy*/
 line-height: 17px;/*beyikligi*/
 color: #131313;
 }
-/*1:30:50 minutda galdym */
+/* minutda galdym */
 /*окей хорошо но есть тут некая проблем к нельзя писать здесь статическую ширину
 вообще статическая ширина верстки это такое прикольное но опасное явление 
 не такое опасное как статическая высота но все
@@ -116,12 +116,11 @@ transition: all .3s; /*asassa yuwas eder yaly animasiyany myskany ustune edenimi
     font-weight: 400;
     font-size: 32px;
     line-height: 39px;
-    columns: #6f6f6f;
+    color: #6f6f6f;
 }
 .bike__text{
     max-width: 420px;
     margin-bottom: 20px;
-    columns: #6f6f6f;
     font-weight: 400;/*ginisligi*/
     font-size: 14px;/*ululugy*/
     line-height: 17px;/*beyikligi*/
@@ -202,6 +201,7 @@ right: 0;
     text-align: center;
     min-width: 58px;
     font-family: 'Inter', sans-serif;
+    font-style: normal;
     font-weight: 400;/*ginisligi*/
     font-size: 14px;/*ululugy*/
     line-height: 17px;/*beyikligi*/
@@ -209,18 +209,27 @@ right: 0;
 }
 .bike__list-num{
    /*!dont work senterde dal zatlar*/
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
     font-weight: 700;
+    font-size: 14px;/*ululugy*/
+    line-height: 17px;/*beyikligi*/
     text-transform: uppercase;
-    
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 .bike__list-text{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     margin: auto 0;
-    
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
-
 
 
 
